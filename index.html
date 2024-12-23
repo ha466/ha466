@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris AI Assistant</title>
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris AI Assistant</title>
+    <link rel="stylesheet" href="ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-brain brain-icon"></i>
+                IRIS
+            </div>
+            <div class="btn primary-btn">Get Started</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="ai-circle">
+            <div class="pulse-ring"></div>
+            <div class="core"></div>
+        </div>
+        <div class="particles"></div>
+        <div class="hero-content">
+            <div class="gradient-text">Meet Iris</div>
+            <p class="subtitle">The next generation AI assistant powered by cutting-edge technology</p>
+            <div class="btn-group">
+                <div class="btn primary-btn">Try Now</div>
+                <a href="https://github.com/ha466/iris.git" class="btn secondary-btn">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Llama 3.3 NLP</h3>
+                <p>Advanced natural language processing for human-like understanding</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3>Deep Speech TTS</h3>
+                <p>Crystal-clear text-to-speech synthesis for natural conversations</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-ear-listen"></i>
+                </div>
+                <h3>Whisper-large-v3</h3>
+                <p>State-of-the-art speech recognition for accurate voice input</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Modern Architecture</h3>
+                <p>Built on cutting-edge technology for superior performance</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-started-section container glass-morphism">
+        <h2 class="gradient-text">Get Started with Iris</h2>
+        
+        <div class="github-card">
+            <h3>Clone the Repository</h3>
+            <a href="https://github.com/ha466/iris.git" class="github-link" target="_blank">
+                <i class="fab fa-github"></i>
+                github.com/ha466/iris
+            </a>
+            
+            <div class="code-block">
+                <pre><code>git clone https://github.com/ha466/iris.git
+cd iris
+npm install
+npm start</code></pre>
+            </div>
+
+            <ul class="steps">
+                <li>Clone the repository and install dependencies</li>
+                <li>Configure your environment variables for AI services</li>
+                <li>Run the development server</li>
+                <li>Visit localhost:3000 to see Iris in action</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.features, .feature-card').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Generate particles
+        const particles = document.querySelector('.particles');
+        for (let i = 0; i < 20; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.top = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 4 + 's';
+            particles.appendChild(particle);
+        }
+    </script>
+</body>
+</html><!-- Previous HTML content from main.html goes here -->
+</body>
+</html>
